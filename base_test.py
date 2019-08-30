@@ -113,8 +113,8 @@ class QLearningTable:
     return self.path_stack, self.direction_stack
 
 if __name__ == "__main__":
-  a_map = produce_map(5, 5)
-  ql = QLearningTable(5, 5, a_map)
+  a_map = produce_map(10, 10)
+  ql = QLearningTable(10, 10, a_map)
   ql.learn(1000)
   res_path, res_dir = ql.check_res_path()
   print "res_path:", res_path
